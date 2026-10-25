@@ -11,18 +11,24 @@
     <h1>TestSquare</h1>
     <p class="subtitle">Move the square and change its colour!</p>
     <div id="area">
-        <div class="hex-dot" style="left: 50%; top: 15%;"></div>
-        <div class="hex-dot" style="left: 74%; top: 32%;"></div>
-        <div class="hex-dot" style="left: 74%; top: 68%;"></div>
-        <div class="hex-dot" style="left: 50%; top: 85%;"></div>
+        <div class="hex-dot" style="left:50%; top:15%;"></div>
+        <div class="hex-dot" style="left: 74%; top: 32%;"> 
+        </div>
+        <div class="hex-dot" style="left: 74%;top: 68%;">
+        </div>
+    
+        <div class="hex-dot" style="left: 50%;top: 85%;"></div>
+
         <div class="hex-dot" style="left: 26%; top: 68%;"></div>
         <div class="hex-dot" style="left: 26%; top: 32%;"></div>
 
         <div id="box" onclick="changeColor()"></div>
     </div>
 
-    <button id="prevBtn" onclick="moveSquare(-1)">Previous</button>
+    <button id="prevBtn" onclick="moveSquare(-1)">Previous
+    </button>
     <button id="nextBtn" onclick="moveSquare(1)">Next</button>
+
     <button id="resetBtn" onclick="resetSquare()">Reset</button>
 
     <p id="status">Use the buttons, scroll, or click on box to move the square.</p>
