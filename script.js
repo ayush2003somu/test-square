@@ -38,7 +38,9 @@
             position = 0;
             moveSquare(0);
         }
-
+        area.addEventListener("pointerdown", function() {
+            moveSquare(1);
+        });
         area.addEventListener("wheel", function(event) {
             event.preventDefault();
 
@@ -55,12 +57,3 @@
                 canScroll = true;
             }, 500);
         });
-
-        // 5. Drag the square with touch or mouse
-        // box.addEventListener("pointermove", function(event) {
-        //     if (event.buttons === 1 || event.pointerType === "touch") {
-        //         let rect = area.getBoundingClientRect();
-        //         box.style.left = (event.clientX - rect.left - 35) + "px";
-        //         box.style.top = (event.clientY - rect.top - 35) + "px";
-        //     }
-        // });
